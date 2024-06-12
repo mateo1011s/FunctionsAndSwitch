@@ -60,7 +60,7 @@ public class FunctionsAndSwitch {
     }
 
     public static double cosOfNumber(double number){
-        return Math.cos(Math.toDegrees(number));
+        return Math.cos(Math.toRadians(number));
     }
 
 }
