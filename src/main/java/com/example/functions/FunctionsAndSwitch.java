@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 import java.util.Scanner;
 import javax.swing.*;
 import java.io.IOException;
-
+import java.lang.Math;
 public class FunctionsAndSwitch {
     public static void main(String[] args) {
         
@@ -38,13 +38,17 @@ public class FunctionsAndSwitch {
                 break;
 
             case "c":
+                printAnyString("Now you are in the cos of a number program ");
+                printAnyString("Enter a number please");
+                double number=scanner.nextDouble();
+                double cosResult= cosOfNumber(number);
+                printAnyString("Your cos is: " + cosResult);
 
                 break;
 
             default:
                 System.out.println("The option is incorrect");
         }
-        printAnyString("Please type the first number");
     }
     public static void printAnyString (String message){
         System.out.println(message);
@@ -52,5 +56,8 @@ public class FunctionsAndSwitch {
     }
     public static int sumNumber(int numberOne, int numberTwo){
         return numberOne+numberTwo;
+    }
+    public static double cosOfNumber(double number){
+        return Math.cos(Math.toDegrees(number));
     }
 }
