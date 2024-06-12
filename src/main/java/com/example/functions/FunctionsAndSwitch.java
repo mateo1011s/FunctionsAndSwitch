@@ -50,14 +50,17 @@ public class FunctionsAndSwitch {
                 System.out.println("The option is incorrect");
         }
     }
+
     public static void printAnyString (String message){
         System.out.println(message);
-        
     }
+
     public static int sumNumber(int numberOne, int numberTwo){
         return numberOne+numberTwo;
     }
+
     public static double cosOfNumber(double number){
         return Math.cos(Math.toDegrees(number));
     }
+
 }
